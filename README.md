@@ -96,8 +96,8 @@ Replace `'password'` with the actual password you set earlier.
 Start and enable Zabbix and NGINX services to run on boot.
 
 ```bash
-systemctl restart zabbix-server zabbix-agent apache2
-systemctl enable zabbix-server zabbix-agent apache2
+ sudo systemctl restart zabbix-server zabbix-agent apache2
+ sudo systemctl enable zabbix-server zabbix-agent apache2
 ```
 
 ### **Step 8: Configure Firewall** (optional, this is when you're using ufw)
