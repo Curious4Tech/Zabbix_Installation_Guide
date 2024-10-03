@@ -92,46 +92,15 @@ DBPassword=password
 
 Replace `'password'` with the actual password you set earlier.
 
-### **Step 7: Configure NGINX for Zabbix**
-Now, edit the Zabbix NGINX configuration file.
-
-```bash
-sudo nano /etc/zabbix/nginx.conf
-```
-
-Uncomment and adjust the following lines to match your server configuration:
-
-```nginx
-        listen          80;
-        server_name     your_server_ip_or_domain;
-```
-
-Replace `your_server_ip_or_domain` with your server's IP address or domain name.
-
-### **Step 8: Configure PHP for Zabbix Frontend**
-Edit the PHP configuration for Zabbix.
-
-```bash
-sudo nano /etc/zabbix/php-fpm.conf
-```
-
-Ensure the timezone is correct for your region:
-
-```php
-php_value[date.timezone] = Europe/London
-```
-
-Replace `Europe/London` with your correct timezone.
-
-### **Step 9: Start and Enable Services**
+### **Step 7: Start and Enable Services**
 Start and enable Zabbix and NGINX services to run on boot.
 
 ```bash
-sudo systemctl restart zabbix-server zabbix-agent nginx php8.2-fpm
-sudo systemctl enable zabbix-server zabbix-agent nginx php8.2-fpm
+systemctl restart zabbix-server zabbix-agent apache2
+systemctl enable zabbix-server zabbix-agent apache2
 ```
 
-### **Step 10: Configure Firewall**
+### **Step 8: Configure Firewall** (optional, this is when you're using ufw)
 If you have a firewall running, allow HTTP and HTTPS traffic.
 
 ```bash
