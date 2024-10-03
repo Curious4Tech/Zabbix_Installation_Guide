@@ -49,8 +49,9 @@ Replace `'password'` with a strong password for the Zabbix database user.
 Zabbix provides its own repository for installation. First, download and install the Zabbix repository:
 
 ```bash
-wget https://repo.zabbix.com/zabbix/6.0/debian/pool/main/z/zabbix-release/zabbix-release_6.0-3%2Bdebian12_all.deb
-sudo dpkg -i zabbix-release_6.0-3+debian12_all.deb
+ wget https://repo.zabbix.com/zabbix/7.0/debian/pool/main/z/zabbix-release/zabbix-release_7.0-2+debian12_all.deb
+ dpkg -i zabbix-release_7.0-2+debian12_all.deb
+
 ```
 
 Update the package list:
@@ -62,7 +63,7 @@ sudo apt update
 Now, install the Zabbix server, web frontend, and agent:
 
 ```bash
-sudo apt install zabbix-server-mysql zabbix-frontend-php zabbix-nginx-conf zabbix-agent -y
+ sudo apt install zabbix-server-mysql zabbix-frontend-php zabbix-apache-conf zabbix-sql-scripts zabbix-agent -y 
 ```
 
 ### **Step 5: Import Zabbix Database Schema**
