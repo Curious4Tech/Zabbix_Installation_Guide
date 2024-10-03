@@ -70,7 +70,7 @@ Now, install the Zabbix server, web frontend, and agent:
 To set up the Zabbix database, import the default schema provided by Zabbix. Run the following command:
 
 ```bash
-zcat /usr/share/doc/zabbix-server-mysql*/create.sql.gz | mysql -uzabbix -p zabbix
+zcat /usr/share/zabbix-sql-scripts/mysql/server.sql.gz | mysql --default-character-set=utf8mb4 -uzabbix -p zabbix
 ```
 
 Provide the `zabbix` database password when prompted.
