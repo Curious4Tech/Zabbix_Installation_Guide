@@ -127,4 +127,4 @@ After logging in, verify that Zabbix is collecting data and that the web interfa
 
 ---
 
-This guide covers the installation of Zabbix with a MySQL/MariaDB database, NGINX web server, and the Zabbix agent on **Debian 12**. Let me know if you need further assistance!
+This guide covers the installation of Zabbix with a MySQL/MariaDB database, Apache2 web server, and the Zabbix agent on **Debian 12**. Let me know if you need further assistance!
