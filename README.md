@@ -1,5 +1,6 @@
 # Zabbix_Installation_Guide
-This repo contains a step by step guide on how to install Zabbix on Debian/Ubuntu linux-based systems
+This repo contains a step by step guide on how to install Zabbix on Debian/Ubuntu linux-based systems.
+
 Here's a step-by-step guide on how to install Zabbix on **Debian 12**. Zabbix is a powerful open-source monitoring solution, and we will install it along with a MySQL database and the NGINX web server.
 
 ### **Step 1: Update System Packages**
