@@ -108,7 +108,7 @@ sudo ufw allow 80/tcp
 sudo ufw allow 443/tcp
 ```
 
-### **Step 11: Access Zabbix Web Interface**
+### **Step 9: Access Zabbix Web Interface**
 Open a browser and navigate to the following URL:
 
 ```
@@ -122,7 +122,7 @@ You should see the Zabbix setup screen. Follow the on-screen instructions to com
 
 You can change the admin password after logging in.
 
-### **Step 12: Test and Verify Installation**
+### **Step 10: Test and Verify Installation**
 After logging in, verify that Zabbix is collecting data and that the web interface is functioning properly.
 
 ---
